@@ -15,7 +15,7 @@ Created on Sat Oct  6 20:37:18 2018
 import cv2
 import os
 import numpy as np
-os.chdir("C:/Users/sahithi/Documents/GitHub/cvlib")
+os.chdir("C:/Users/sahithi/Documents/GitHub/cvlib") #your project folder path 
 from gtts import gTTS
 import pyttsx3
 
@@ -32,10 +32,11 @@ def get_output_layers(net):
 def draw_prediction(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
 
     label = str(classes[class_id])
+    #Text to Speech
     #label = "fruit"
-    engine = pyttsx3.init()
-    engine.say(label)
-    engine.runAndWait() 
+    #engine = pyttsx3.init()
+    #engine.say(label)
+    #engine.runAndWait() 
 
     
     
